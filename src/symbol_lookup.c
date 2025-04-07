@@ -21,7 +21,7 @@
 
 #include <lookup/symbol_lookup.h>
 
-/* Dynamically find a symbol in a library */
+/* Find a symbol in a dynamic library */
 void* symbol_lookup(const char *libname, const char *symbol)
 {
    void *handle = dlopen(libname, RTLD_LAZY);
